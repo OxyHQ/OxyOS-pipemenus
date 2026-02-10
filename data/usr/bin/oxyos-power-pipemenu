@@ -1,7 +1,7 @@
 #!/bin/bash
 # ---------------------------------------------------------------------
 # An Openbox pipemenu for use with powerprofilesctl.
-# Written for OxyOS <https://oxyos.org/>
+# Written for OxyOS <https://os.oxy.so/>
 # ---------------------------------------------------------------------
 
 if ! . oxyos-include.cfg 2> /dev/null; then

@@ -14,7 +14,7 @@
 #    GNU General Public License for more details.
 #    version 2012/07/01-cb
 
-# Ported to OxyOS <https://oxyos.org/>
+# Ported to OxyOS <https://os.oxy.so/>
 
 # Usage: add
 # <menu id="recent" label="Recent Files" execute="/path/to/oxyos-recent-files-pipemenu" />

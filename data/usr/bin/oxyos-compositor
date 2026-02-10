@@ -1,7 +1,7 @@
 #!/bin/bash
 # oxyos-compton
 # Openbox Pipe Menu for use with compton compositor
-# Written for OxyOS <https://oxyos.org/>
+# Written for OxyOS <https://os.oxy.so/>
 # Originally by Philip Newborough <corenominal@corenominal.org>
 
 RESTART_ATTEMPTS=20

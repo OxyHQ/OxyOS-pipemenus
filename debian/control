@@ -1,10 +1,10 @@
 Source: oxyos-pipemenus
 Section: misc
 Priority: extra
-Maintainer: OxyOS Team <team@oxyos.org>
+Maintainer: OxyHQ <admin@oxy.so>
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 3.9.8
-Homepage: https://oxyos.org/
+Homepage: https://os.oxy.so
 
 Package: oxyos-pipemenus
 Architecture: all

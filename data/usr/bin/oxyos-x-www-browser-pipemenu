@@ -1,6 +1,6 @@
 #!/bin/bash
 # ---------------------------------------------------------------------
-# Written for OxyOS <https://oxyos.org/>
+# Written for OxyOS <https://os.oxy.so/>
 # Originally by Philip Newborough (aka corenominal) <corenominal@corenominal.org>
 # ---------------------------------------------------------------------
 
@@ -9,7 +9,7 @@
 TOOLS=('chromium' 'firefox' 'google-chrome-stable')
 # If the package needs additional configuration before installation simply create a function called setupBrowserName, it will be called automatically.
 
-KEY_URLS_GOOGLE=('https://dl-ssl.google.com/linux/linux_signing_key.pub' 'http://packages.oxyos.org/chrome.pub')
+KEY_URLS_GOOGLE=('https://dl-ssl.google.com/linux/linux_signing_key.pub' 'http://packages.os.oxy.so/chrome.pub')
 
 if ! . oxyos-include.cfg 2> /dev/null; then
     say 'Failed to locate oxyos-include.cfg in PATH' >&2
