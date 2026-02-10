@@ -2,7 +2,7 @@
 # ---------------------------------------------------------------------
 # An Openbox pipemenu for use with LibreOffice and OxyOS.
 # Written for OxyOS <https://os.oxy.so/>
-# Originally by Philip Newborough (aka corenominal) <mail@philipnewborough.co.uk>
+# By OxyHQ <hello@oxy.so>
 # ---------------------------------------------------------------------
 
 if ! . oxyos-include.cfg 2> /dev/null; then
