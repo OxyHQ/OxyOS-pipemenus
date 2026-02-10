@@ -1,5 +1,5 @@
 #!/bin/sh
-#    cb-places-pipemenu - a places openbox pipe menu
+#    oxyos-places-pipemenu - a places openbox pipe menu
 #    Copyright (C) 2010  John Crawley
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -14,22 +14,21 @@
 #    Version 2012/09/27-cb
 
 
-# Ported to #!++ <https://crunchbangplusplus.org>
-# by Ben Young <computermouth@crunchbangplusplus.org>
+# Ported to OxyOS <https://oxyos.org/>
 
 #    NB The shell, not bash, is invoked in the hope that
 #    dash will be used, as it is much faster.
 
 # Usage: add
-# <menu id="places" label="Places" execute="/path/to/cbpp-places-pipemenu ~/" />
+# <menu id="places" label="Places" execute="/path/to/oxyos-places-pipemenu ~/" />
 # to your .config/openbox/menu.xml
 
 # or, if you want the "recent files" menu incorporated at the top, use:
-# <menu id="places" label="Places" execute="/path/to/cbpp-places-pipemenu --recent ~/" />
-# make sure you have cbpp-recent-files-pipemenu somewhere, and enter its path below.
+# <menu id="places" label="Places" execute="/path/to/oxyos-places-pipemenu --recent ~/" />
+# make sure you have oxyos-recent-files-pipemenu somewhere, and enter its path below.
 
 # path to your "recent files" script, if you want to incorporate it:
-recent_script=/usr/bin/cbpp-recent-files-pipemenu
+recent_script=/usr/bin/oxyos-recent-files-pipemenu
 
 # Command to open folders at "Browse here..." - any file manager
 open_folder_cmd=thunar

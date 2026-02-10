@@ -1,0 +1,22 @@
+#!/bin/bash
+if ! . oxyos-include.cfg 2> /dev/null; then
+    echo '  Failed to locate oxyos-include.cfg in PATH' >&2
+    exit 1
+fi
+
+menuStart
+menuSeparator 'Online Help'
+menuItem 'OxyOS Documentation' 'x-www-browser https://oxyos.org/docs'
+
+menuSubmenu 'OxyOSWWW' 'OxyOS'
+menuItem 'OxyOS Homepage' 'x-www-browser https://oxyos.org/'
+menuSubmenuEnd
+
+menuSubmenu 'OpenboxWWW' 'Openbox'
+menuItem 'Openbox Homepage' 'x-www-browser "http://openbox.org/wiki/Main_Page"'
+menuItem 'Openbox Documentation' 'x-www-browser "http://openbox.org/wiki/Help:Contents"'
+menuItem 'Openbox FAQ' 'x-www-browser "http://openbox.org/wiki/Help:FAQ"'
+menuItem 'Openbox Getting Started' 'x-www-browser "http://openbox.org/wiki/Help:Getting_started"'
+menuItem 'Openbox Community Portal' 'x-www-browser "http://openbox.org/wiki/Openbox:Community_portal"'
+menuSubmenuEnd
+menuEnd

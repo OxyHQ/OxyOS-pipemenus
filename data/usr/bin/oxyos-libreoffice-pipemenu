@@ -1,0 +1,37 @@
+#!/bin/bash
+# ---------------------------------------------------------------------
+# An Openbox pipemenu for use with LibreOffice and OxyOS.
+# Written for OxyOS <https://oxyos.org/>
+# Originally by Philip Newborough (aka corenominal) <mail@philipnewborough.co.uk>
+# ---------------------------------------------------------------------
+
+if ! . oxyos-include.cfg 2> /dev/null; then
+    echo '  Failed to locate oxyos-include.cfg in PATH' >&2
+    exit 1
+fi
+
+if [[ $1 = '--install' ]]; then
+    terminator --title='Install LibreOffice' --command='oxyos-libreoffice-pipemenu --install-lo'
+
+elif [[ $1 = '--install-lo' ]]; then
+    promptInstall 'LIBREOFFICE' 'LibreOffice' 'oxyos-meta-libreoffice'
+
+else
+    # Pipemenu
+    menuStart
+
+    tools=('writer' 'calc' 'impress' 'draw' 'base')
+
+    for curTool in "${tools[@]}"; do
+        if type "lo$curTool" &> /dev/null; then
+            INSTALLED=true
+            menuItem "${curTool^}" "lo$curTool"
+        fi
+    done
+
+    [[ ! $INSTALLED ]] &&
+        menuItem 'Install LibreOffice' 'oxyos-libreoffice-pipemenu --install'
+
+    menuEnd
+fi
+exit 0

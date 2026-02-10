@@ -1,5 +1,5 @@
 #!/bin/sh
-#    cb-recent-files-pipemenu - a script to parse .recently-used.xbel
+#    oxyos-recent-files-pipemenu - a script to parse .recently-used.xbel
 #    and generate openbox pipe menu
 #    Copyright (C) 2010  John Crawley
 #
@@ -14,12 +14,11 @@
 #    GNU General Public License for more details.
 #    version 2012/07/01-cb
 
-# Ported to #!++ <https://crunchbangplusplus.org>
-# by Ben Young <computermouth@crunchbangplusplus.org>
+# Ported to OxyOS <https://oxyos.org/>
 
 # Usage: add
-# <menu id="recent" label="Recent Files" execute="/path/to/cbpp-recent-files-pipemenu" />
-# to your .config/openbox/menu.xml, or use with cbpp-places-pipemenu (see comments there)
+# <menu id="recent" label="Recent Files" execute="/path/to/oxyos-recent-files-pipemenu" />
+# to your .config/openbox/menu.xml, or use with oxyos-places-pipemenu (see comments there)
 
 maximum_entries=15 # max. number of entries in menu
 
@@ -70,14 +69,14 @@ files=$( tac "${file_path}" |  awk -v MAX="$maximum_entries" -v PR="$pre" -v MI=
 }
 (NR == MAX) {exit}
 !/<bookmark/ {next}
-!/href=[\"'\'']file:\/\// {next}
+!/href=[\"'\''']file:\/\// {next}
 # $1 is the command, $2 the file path
 {
     sub(/^.*exec=\"\&apos\;/,"",$1)
     sub(/\&apos\;.*$/,"",$1)
     sub(/ *%./,"",$1)
     sub(/^.*file:\/\//,"",$2)
-    sub(/[\"'\''].*$/,"",$2)
+    sub(/[\"'\'''].*$/,"",$2)
     gsub(/%22/,"\\&quot;",$2)
     gsub(/%3C/,"\\&lt;",$2)
     gsub(/%3E/,"\\&gt;",$2)

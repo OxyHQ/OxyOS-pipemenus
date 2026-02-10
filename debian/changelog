@@ -1,4 +1,10 @@
-cbpp-pipemenus (13.0) unstable; urgency=low
+oxyos-pipemenus (14.0) unstable; urgency=low
+
+  * Rebrand from CBPP to OxyOS
+
+ -- OxyOS Team <team@oxyos.org>  Tue, 10 Feb 2026 00:00:00 +0000
+
+oxyos-pipemenus (13.0) unstable; urgency=low
 
   * New power pipemenu
   * Chrome pipemenu fix
@@ -6,49 +12,49 @@ cbpp-pipemenus (13.0) unstable; urgency=low
 
  -- computermouth <computermouth@crunchbangplusplus.org>  Sun, 08 Jun 2025 16:29:16 -0800
 
-cbpp-pipemenus (12.0) unstable; urgency=low
+oxyos-pipemenus (12.0) unstable; urgency=low
 
   * Removing dropbox
 
  -- computermouth <computermouth@crunchbangplusplus.org>  Sun, 14 May 2023 16:29:16 -0800
 
-cbpp-pipemenus (11.0) unstable; urgency=low
+oxyos-pipemenus (11.0) unstable; urgency=low
 
   * Updated package standards
   * Fix up the ssh pipemenu and dependencies
 
  -- computermouth <computermouth@crunchbangplusplus.org>  Thu, 22 Apr 2021 13:17:16 -0800
 
-cbpp-pipemenus (10.0) unstable; urgency=low
+oxyos-pipemenus (10.0) unstable; urgency=low
 
   * Updated package standards
 
  -- computermouth <computermouth@crunchbangplusplus.org>  Sun, 12 May 2019 11:58:56 -0800
 
-cbpp-pipemenus (9.0) unstable; urgency=low
+oxyos-pipemenus (9.0) unstable; urgency=low
 
   * Nine it!
   * Iceweasel -> Firefox
 
  -- computermouth <computermouth@crunchbangplusplus.org>  Mon, 27 Feb 2017 23:23:56 -0800
- 
-cbpp-pipemenus (1.2) unstable; urgency=low
+
+oxyos-pipemenus (1.2) unstable; urgency=low
 
   * Iceweasel instances replaced with Firefox
 
  -- computermouth <computermouth@crunchbangplusplus.org>  Sun, 26 June 2016 18:08:56 -0600
 
-cbpp-pipemenus (1.1) unstable; urgency=low
+oxyos-pipemenus (1.1) unstable; urgency=low
 
   * Dropbox pipemenu fixed
 
  -- computermouth <computermouth@crunchbangplusplus.org>  Tue, 24 Feb 2015 11:08:56 -0600
 
-cbpp-pipemenus (1.0) unstable; urgency=low
+oxyos-pipemenus (1.0) unstable; urgency=low
 
   * Initial Release.
   * Updated debian standards and changed branding.
-  * Removed original #! server calls, replaced with CBPP server calls.
+  * Removed original #! server calls, replaced with OxyOS server calls.
   * Updated package detection, pipemenu name rendering, and other misc. code changes via AlexDaniel.
   * Updated several package names.
 
@@ -127,14 +133,14 @@ cb-pipemenus (0.06) unstable; urgency=low
 
 cb-pipemenus (0.05) unstable; urgency=low
 
-  * Modified 'connectiontest' function to use the reliable wget 
+  * Modified 'connectiontest' function to use the reliable wget
     method instead of unreliable ping.
   * Moved 'connectiontest' function to a new file (cb-include.cfg),
-    that can be sourced inside any bash script and used to store 
+    that can be sourced inside any bash script and used to store
     common variables and functions.
   * Modified relevant cb-* scripts to reflect this change.
-  * Modified 'cb-x-www-browser-pipemenu' script to use vendor 
-    supplied URLs as primary sources of APT keys; but implemented 
+  * Modified 'cb-x-www-browser-pipemenu' script to use vendor
+    supplied URLs as primary sources of APT keys; but implemented
     fallback to packages.crunchbang.org if primary sources fail. This
     concerns Opera and Google Chrome options.
 

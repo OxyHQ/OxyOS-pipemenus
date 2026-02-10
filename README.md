@@ -1,2 +1,2 @@
-# cbpp-pipemenus
- Contains various Openbox pipemenus for use with CBPP.
+# oxyos-pipemenus
+ Contains various Openbox pipemenus for use with OxyOS.

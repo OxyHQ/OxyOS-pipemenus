@@ -1,15 +1,13 @@
 #!/bin/bash
-# cbpp-compton
+# oxyos-compton
 # Openbox Pipe Menu for use with compton compositor
-# Written for CrunchBang Linux <http://crunchbang.org/>
-# by Philip Newborough <corenominal@corenominal.org>
-# Ported to #!++ <https://crunchbangplusplus.org>
-# by Ben Young <computermouth@crunchbangplusplus.org>
+# Written for OxyOS <https://oxyos.org/>
+# Originally by Philip Newborough <corenominal@corenominal.org>
 
 RESTART_ATTEMPTS=20
 
-if ! . cbpp-include.cfg 2> /dev/null; then
-    echo '  Failed to locate cbpp-include.cfg in PATH' >&2
+if ! . oxyos-include.cfg 2> /dev/null; then
+    echo '  Failed to locate oxyos-include.cfg in PATH' >&2
     exit 1
 fi
 
@@ -47,22 +45,22 @@ elif [[ $1 = '--restart' ]]; then
 
         sleep 0.25
     done
-    cbpp-compositor --start
+    oxyos-compositor --start
 elif [[ $1 = '--watch' ]]; then
     while inotifywait -e modify "$HOME/.config/compton.conf"; do
-        cbpp-compositor --restart # TODO move this to function?
+        oxyos-compositor --restart # TODO move this to function?
     done
 else
     # Output Openbox menu
     menuStart
     if ! pidof compton > /dev/null; then
-        menuItem 'Enable Compositing' 'cbpp-compositor --start'
+        menuItem 'Enable Compositing' 'oxyos-compositor --start'
     else
-        menuItem 'Restart Compositing' 'cbpp-compositor --restart'
-        menuItem 'Disable Compositing' 'cbpp-compositor --toggle'
+        menuItem 'Restart Compositing' 'oxyos-compositor --restart'
+        menuItem 'Disable Compositing' 'oxyos-compositor --toggle'
         menuSeparator
     fi
-    menuItem 'Edit Compositing Settings' 'cbpp-compositor --edit'
+    menuItem 'Edit Compositing Settings' 'oxyos-compositor --edit'
     menuEnd
 fi
 exit 0
