@@ -6,7 +6,7 @@ fi
 
 menuStart
 menuSeparator 'Online Help'
-menuItem 'OxyOS Documentation' 'x-www-browser https://os.oxy.so/docs'
+menuItem 'OxyOS Documentation' 'x-www-browser https://github.com/OxyHQ/OxyOS/wiki'
 
 menuSubmenu 'OxyOSWWW' 'OxyOS'
 menuItem 'OxyOS Homepage' 'x-www-browser https://os.oxy.so/'
