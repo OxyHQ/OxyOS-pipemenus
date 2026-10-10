@@ -1,6 +1,6 @@
 # oxyos-pipemenus
 
-Contains various Openbox pipemenus for use with [OxyOS](https://os.oxy.so).
+Contains various Openbox pipemenus for use with [OxyOS](https://oxy.so/os).
 
 ---
-Part of [OxyOS](https://os.oxy.so) | [GitHub](https://github.com/OxyHQ)
+Part of [OxyOS](https://oxy.so/os) | [GitHub](https://github.com/OxyHQ)
